@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.androidprogramminginjava">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,23 +12,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidProgrammingInJava">
         <activity
-            android:name=".ValidationActivity"
+            android:name=".ConstraintLayoutActivity"
             android:exported="false" />
         <activity
-            android:name=".AutoCompleteTextViewActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:name=".GridLayoutActivity"
+            android:exported="false" />
         <activity
-            android:name=".SecondProject"
-            android:exported="true"></activity>
+            android:name=".TableLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FrameLayoutActivity"
+            android:exported="false" />
         <activity
             android:name=".FirstProject"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>

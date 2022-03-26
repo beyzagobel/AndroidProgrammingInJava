@@ -26,9 +26,9 @@ ve kendi çalışmalarımı sizler için mini projeler olarak hazırladım.
        + AndroidManifest.xml
 
 
-**Activity : Kullanıcı ile etkileşime girdiğimiz ekrandır. Her bir ekranın bir arayüz bileşeni (layout) vardır**
-
->Burada en çok activity ve activity'lerin class'larıyla ilgileneceğiz.
+**Activity : Kullanıcı ile etkileşime girdiğimiz ekrandır. Her bir ekranın bir arayüz bileşeni (layout) vardır.**
+>Bir activity oluşturulduğu anda java sınıfa otomatik olarak oluşturulur. Her bir activity'i tanımlayan bir java sınıfı vardır.
+>Biz bu Java sınıflarını kullanarak gerekli işlemlerimizi yazacağız.
    
            
            

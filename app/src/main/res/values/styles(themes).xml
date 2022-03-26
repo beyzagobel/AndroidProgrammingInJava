@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SubmitButton" parent="@style/Widget.MaterialComponents.Button">SubmitButton
+    <item name="backgroundTint">@color/material_dynamic_secondary0</item>
+        <item name="iconTint">@android:color/holo_blue_light</item>
+        <item name="icon">@drawable/ic_done</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+</resources>

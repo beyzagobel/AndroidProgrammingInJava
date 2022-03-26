@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MaterialButtonActivity"
+    android:orientation="vertical">
+
+    <!-- pdf 4 -->
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEMEL BUTTON"
+       />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ARKAPLANSIZ BUTTON"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:text="arka plan renkli buton"
+        android:textColor="#fff"
+        app:backgroundTint="@color/design_default_color_secondary"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Icon'lu Button"
+        app:backgroundTint="@color/design_default_color_secondary"
+        app:cornerRadius="16dp"
+        app:icon="@drawable/baseline_search_black_18"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Renkli Icon'lu Button"
+        app:backgroundTint="@color/design_default_color_secondary"
+        app:cornerRadius="16dp"
+        app:icon="@drawable/baseline_search_black_18"
+        app:iconTint="#ffff00"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KAYDET"
+        style="@style/SubmitButton"/>
+
+
+</LinearLayout>
