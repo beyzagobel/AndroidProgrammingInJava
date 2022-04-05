@@ -1,11 +1,5 @@
 <resources>
     <string name="app_name">AndroidProgrammingInJava</string>
 
-    <string-array name="engineering">
-        <item>Computer Engineering</item>
-        <item>Industrial Engineering</item>
-        <item>Machine Engineering</item>
-        <item>Environmental Engineering</item>
-        <item>Mechatronic Engineering</item>
-    </string-array>
+
 </resources>

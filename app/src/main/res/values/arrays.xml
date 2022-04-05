@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="engineering">
+        <item>Computer Engineering</item>
+        <item>Industrial Engineering</item>
+        <item>Machine Engineering</item>
+        <item>Environmental Engineering</item>
+        <item>Mechatronic Engineering</item>
+    </string-array>
+</resources>

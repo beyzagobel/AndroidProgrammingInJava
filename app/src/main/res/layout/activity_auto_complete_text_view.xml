@@ -9,10 +9,7 @@
         android:id="@+id/txtBolum"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=""
         android:hint="Bolum"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="68dp"
         />
 
 </LinearLayout>

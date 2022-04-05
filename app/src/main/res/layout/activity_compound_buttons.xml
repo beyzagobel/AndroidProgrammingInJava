@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompoundButtonsActivity"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+    <ToggleButton
+        android:id="@+id/tglButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="Durdur"
+        android:textOn="Başlat"/>
+
+    <Switch
+        android:id="@+id/swtButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="Altyazı"/>
+
+    <CheckBox
+        android:id="@+id/chkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"/>
+
+    <RadioGroup
+        android:id="@+id/radioGrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioVar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Var"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioYok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yok" />
+    </RadioGroup>
+
+
+</LinearLayout>

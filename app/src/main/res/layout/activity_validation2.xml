@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ValidationActivity2"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lblIsim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="İsim : " />
+
+    <EditText
+        android:id="@+id/txtIsım"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="isim"
+        android:minHeight="48dp"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/lblSoyisim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Soyisim : " />
+
+    <EditText
+        android:id="@+id/txtSoyisim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="soyisim"
+        android:inputType="text"
+      />
+
+    <Button
+        android:id="@+id/btnKaydet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:visibility="invisible"/>
+
+
+</LinearLayout>

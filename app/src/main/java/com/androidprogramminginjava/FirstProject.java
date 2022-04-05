@@ -15,18 +15,8 @@ import android.widget.TextView;
  */
 public class FirstProject extends AppCompatActivity {
 
-    /**
-     * @param TAG bulunuduğu sınıfın adının döndürür.Log'un parametresidir
-     * @return String
-     */
-    public final String TAG =FirstProject.class.getName();
 
-    /**
-     * @param txtSayi1 toplama işlemi için birinci sayinin değerini tutan EditText
-     * @param txtSayi2 toplama işlemi için ikinci sayinin değerini tutan EditText
-     * @param lblToplam txtSayi1+txtSayi2
-     *
-     */
+    public final String TAG =FirstProject.class.getName();
 
     private EditText txtSayi1,txtSayi2;
     private Button btnTopla;
@@ -56,8 +46,8 @@ public class FirstProject extends AppCompatActivity {
         btnTopla.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int sayi1 = Integer.valueOf(txtSayi1.getText().toString());
-                int sayi2 = Integer.valueOf(txtSayi2.getText().toString());
+                int sayi1 = Integer.parseInt(txtSayi1.getText().toString());
+                int sayi2 = Integer.parseInt(txtSayi2.getText().toString());
                 lblToplam.setText("Toplam : " + (sayi1 + sayi2));
             }
         });
