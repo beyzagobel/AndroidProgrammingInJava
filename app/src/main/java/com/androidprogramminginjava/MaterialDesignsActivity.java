@@ -41,13 +41,21 @@ public class MaterialDesignsActivity extends AppCompatActivity {
     }
 
     private void floatingActionButton_onClick() {
-        floatingActionButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar snackbar = Snackbar.make(view,"FAB MENUYE TIKLANDI",Snackbar.LENGTH_LONG);
-                snackbar.show();
-            }
-        });
+       View.OnClickListener onClickListener = new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Snackbar snackbar = Snackbar.make(view,"FAB tıklanıldı.",Snackbar.LENGTH_LONG);
+               snackbar.setAction("Tamam", new View.OnClickListener() {
+                   @Override
+                   public void onClick(View view) {
+                       Toast.makeText(MaterialDesignsActivity.this,"Tamam a tıklanıldı",Toast.LENGTH_LONG).show();
+                   }
+               });
+               snackbar.show();
+           }
+       };
+        floatingActionButton.setOnClickListener(onClickListener);
+
     }
 
 

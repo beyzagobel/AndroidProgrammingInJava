@@ -48,7 +48,7 @@ public class DestinationActivity extends AppCompatActivity {
         lblGelenSayi = findViewById(R.id.txtGelenSayi);
         btnKaresiniAlGonder = findViewById(R.id.btnKaresiniAlGonder);
 
-        incomingIntent = new Intent();
+        incomingIntent = getIntent();
         Integer sayi = incomingIntent.getIntExtra("sayi",0);
         lblGelenSayi.setText(sayi.toString());
 

@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
 
     <application
         android:allowBackup="true"
@@ -13,13 +14,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidProgrammingInJava">
         <activity
-            android:name=".DestinationActivity"
+            android:name=".MenusActivity"
             android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/actions" />
+
         <activity
-            android:name=".ResultActivity"
-            android:exported="false" />
-        <activity
-            android:name=".IntentsActivity"
+            android:name=".DialogsActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,6 +30,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".TextInputLayoutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ListViewActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DestinationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ResultActivity"
+            android:exported="true" />
+        <activity
+            android:name=".IntentsActivity"
+            android:exported="true" />
         <activity
             android:name=".PermissionsActivity"
             android:exported="true" />

@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class ResultActivity extends AppCompatActivity {
 
@@ -30,6 +32,7 @@ public class ResultActivity extends AppCompatActivity {
     }
 
     private void registerEventHandlers() {
+
         btnGonder_onClick();
     }
 
@@ -39,9 +42,27 @@ public class ResultActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(ResultActivity.this,DestinationActivity.class);
                 intent.putExtra("sayi",Integer.parseInt(txtSayi.getText().toString()));
-                startActivity(intent);
+                startActivityForResult(intent,REQUEST_CODE_KARE_AL);
             }
         });
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if(requestCode == REQUEST_CODE_KARE_AL){
+            if(resultCode == RESULT_OK){
+                int gelenSayi = data.getIntExtra("sayi",0);
+                Toast.makeText(ResultActivity.this,"Gelen Sayi : "+ gelenSayi ,Toast.LENGTH_LONG ).show();
+
+                txtSayi.setText("gelen sayi" + gelenSayi);
+
+            }else if(resultCode == RESULT_CANCELED){
+
+            }
+        }
     }
 
 }

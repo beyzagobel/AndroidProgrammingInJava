@@ -7,4 +7,16 @@
         <item>Environmental Engineering</item>
         <item>Mechatronic Engineering</item>
     </string-array>
+
+    <string-array name="gunler">
+        <item>Pazartesi</item>
+        <item>Salı</item>
+        <item>Çarşamba</item>
+        <item>Perşembe</item>
+        <item>Cuma</item>
+        <item>Cumartesi</item>
+        <item>Pazar</item>
+
+    </string-array>
+
 </resources>

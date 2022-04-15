@@ -6,4 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".PermissionsActivity">
 
+    <TextView
+        android:id="@+id/lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="48dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnIzin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="18dp"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="@+id/lbl"
+        app:layout_constraintTop_toBottomOf="@+id/lbl" />
 </androidx.constraintlayout.widget.ConstraintLayout>

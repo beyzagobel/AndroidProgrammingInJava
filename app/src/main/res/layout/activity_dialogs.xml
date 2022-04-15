@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DialogsActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnAlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ALLERT DİALOG"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="41dp" />
+    <Button
+        android:id="@+id/btnMultiChoiseDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MULTI CHOISE DİALOG" />
+
+    <Button
+        android:id="@+id/btnTimePickerDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TIME PICKER DİALOG"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="131dp" />
+
+    <Button
+        android:id="@+id/btnDatePickerDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DATE PICKER DİALOG"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="196dp" />
+
+
+
+    <Button
+        android:id="@+id/btnProgressDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROGRESS DIALOG"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="272dp" />
+</LinearLayout>
