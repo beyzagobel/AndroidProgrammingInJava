@@ -3,6 +3,7 @@
     package="com.androidprogramminginjava">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
 
     <application
         android:allowBackup="true"
@@ -12,10 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidProgrammingInJava">
         <activity
-            android:name=".MateriadlDesignsActivity"
+            android:name=".DestinationActivity"
             android:exported="false" />
         <activity
-            android:name=".CompoundButtonsActivity"
+            android:name=".ResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IntentsActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,23 +28,26 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".PermissionsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CompoundButtonsActivity"
+            android:exported="true" />
+        <activity
             android:name=".ValidationActivity2"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".ValidationActivity1"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".EventHandlingActivity"
             android:exported="true" />
         <activity
             android:name=".ConstraintLayoutActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".GridLayoutActivity"
             android:exported="true" />
-        <activity
-            android:name=".TableLayoutActivity"
-            android:exported="true"></activity>
         <activity
             android:name=".FrameLayoutActivity"
             android:exported="true" />
@@ -49,10 +56,13 @@
             android:exported="true" />
         <activity
             android:name=".AutoCompleteTextViewActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".MaterialButtonActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
+        <activity
+            android:name=".MaterialDesignsActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

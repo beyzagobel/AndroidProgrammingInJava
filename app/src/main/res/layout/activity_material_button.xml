@@ -67,26 +67,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="?android:selectableItemBackgroundBorderless"
+        android:minHeight="48dp"
         android:scaleType="fitCenter"
         android:src="@drawable/baseline_search_black_36" />
-
-    <ToggleButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:checked="true"
-        android:textOff="kapalı"
-        android:textOn="açık"/>
-
-    <androidx.appcompat.widget.SwitchCompat
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:checked="true"
-        android:text="altyazı"/>
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:checked="true"
-        android:text="deneme"/>
 
 </LinearLayout>
